@@ -5,7 +5,7 @@ const initialState = {
   id: null,
   eatenProducts: [],
   date: '',
-  daySummary: {},
+  daySummary: { id: 0 },
 };
 
 export const daySlice = createSlice({
@@ -13,10 +13,11 @@ export const daySlice = createSlice({
   initialState,
   extraReducers: builder => {
     builder.addCase(postProduct.fulfilled, (state, action) => {
-      state.eatenProducts = action.payload.day.eatenProducts;
-      state.id = action.payload.day.id;
-      state.date = action.payload.day.date;
-      state.daySummary = action.payload.daySummary;
+      state.eatenProducts =
+        action.payload.newDay.eatenProducts || action.payload.day.eatenProducts;
+      state.id = action.payload.newDay.id || action.payload.day.id;
+      state.date = action.payload.newDay.date || action.payload.day.date;
+      state.daySummary = action.payload.newSummary || action.payload.daySummary;
     });
     builder.addCase(deleteProduct.fulfilled, (state, action) => {
       state.daySummary = action.payload.newDaySummary;
