@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/goit-react-health-project/static/css/main.b00c4e05.css",
-    "main.js": "/goit-react-health-project/static/js/main.c184fce1.js",
+    "main.js": "/goit-react-health-project/static/js/main.e67275bd.js",
     "index.html": "/goit-react-health-project/index.html",
     "main.b00c4e05.css.map": "/goit-react-health-project/static/css/main.b00c4e05.css.map",
-    "main.c184fce1.js.map": "/goit-react-health-project/static/js/main.c184fce1.js.map"
+    "main.e67275bd.js.map": "/goit-react-health-project/static/js/main.e67275bd.js.map"
   },
   "entrypoints": [
     "static/css/main.b00c4e05.css",
-    "static/js/main.c184fce1.js"
+    "static/js/main.e67275bd.js"
   ]
 }
