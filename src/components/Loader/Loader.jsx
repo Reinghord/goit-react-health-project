@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid } from 'react-loader-spinner'
 
-export const Loader = () => {
+export default Loader = () => {
 	return (
 		<div>
 			<Grid
