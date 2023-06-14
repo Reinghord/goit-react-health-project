@@ -1,7 +1,12 @@
 import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/auth/auth-operations';
-
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import {
+  StyledInputAuth,
+  StyledFormAuth,
+  StyledBtnAuthAccent,
+  StyledHeaderAuth,
+} from './Login.styled';
+import { Formik, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 
 let schema = yup.object({
@@ -12,12 +17,7 @@ let schema = yup.object({
     .max(32)
     .matches(/^(?=.*[a-zA-Z])(?=.*[0-9])/, 'a-z and 0-9'),
 
-  email: yup
-    .string()
-    .required('Please enter a password')
-    .email()
-    .min(8)
-    .max(32),
+  email: yup.string().required('Please enter a email').email().min(8).max(32),
 });
 
 function Login() {
@@ -32,22 +32,25 @@ function Login() {
   };
   return (
     <>
+      <StyledHeaderAuth>Log in</StyledHeaderAuth>
       <Formik
         onSubmit={handleSubmit}
         validationSchema={schema}
         initialValues={startValue}
       >
-        <Form>
-          <lable htmlFor="email">Email</lable>
-          <Field type="email" name="email" />
+        <StyledFormAuth>
+          <StyledInputAuth type="email" name="email" placeholder="Email *" />
           <ErrorMessage name="tremail" component="div" />
 
-          <lable htmlFor="password">Password</lable>
-          <Field type="password" name="password" />
+          <StyledInputAuth
+            type="password"
+            name="password"
+            placeholder="Password *"
+          />
           <ErrorMessage name="password" component="div" />
 
-          <button type="submit">Log in</button>
-        </Form>
+          <StyledBtnAuthAccent type="submit">Log in</StyledBtnAuthAccent>
+        </StyledFormAuth>
       </Formik>
     </>
   );

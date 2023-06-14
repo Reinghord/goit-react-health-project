@@ -1,7 +1,13 @@
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, ErrorMessage } from 'formik';
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/auth-operations';
 import * as yup from 'yup';
+import {
+  StyledInputAuth,
+  StyledFormAuth,
+  StyledBtnAuthAccent,
+  StyledHeaderAuth,
+} from '../Login/Login.styled';
 
 let schema = yup.object({
   username: yup.string().required('Please enter a name').min(3).max(32),
@@ -34,26 +40,28 @@ function Register() {
   };
   return (
     <>
+      <StyledHeaderAuth>Register</StyledHeaderAuth>
       <Formik
         onSubmit={handleSubmit}
         validationSchema={schema}
         initialValues={startValue}
       >
-        <Form>
-          <lable htmlFor="username">Name</lable>
-          <Field type="text" name="username" />
+        <StyledFormAuth>
+          <StyledInputAuth type="text" name="username" placeholder="Name *" />
           <ErrorMessage name="username" component="div" />
 
-          <lable htmlFor="email">Email</lable>
-          <Field type="email" name="email" />
+          <StyledInputAuth type="email" name="email" placeholder="Email *" />
           <ErrorMessage name="email" component="div" />
 
-          <lable htmlFor="password">Password</lable>
-          <Field type="password" name="password" />
+          <StyledInputAuth
+            type="password"
+            name="password"
+            placeholder="Password *"
+          />
           <ErrorMessage name="password" component="div" />
 
-          <button type="submit">Register</button>
-        </Form>
+          <StyledBtnAuthAccent type="submit">Register</StyledBtnAuthAccent>
+        </StyledFormAuth>
       </Formik>
     </>
   );
