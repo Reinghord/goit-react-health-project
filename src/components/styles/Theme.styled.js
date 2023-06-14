@@ -17,6 +17,10 @@ export const light = {
     borderLight: 'rgba(254, 190, 144, 0.5)',
     borderActive: '#212121',
 
+    backgroundGradientDesktop:
+      'linear-gradient(90deg, rgba(255,255,255,1) 760px, rgba(240,241,243,1) 760px)',
+    backgroundGradientTablet:
+      'linear-gradient(180deg, rgba(255,255,255,1) 674px, rgba(240,241,243,1) 674px)',
     background: '#FFFFFF',
     backroundSecond: '#F0F1F3',
     backroundBurger: '#264061',
@@ -47,6 +51,10 @@ export const dark = {
     borderLight: 'rgba(255, 219, 193, 0.5)',
     borderActive: '#DDDDDD',
 
+    backgroundGradientDesktop:
+      'linear-gradient(90deg, rgba(32,32,37,1) 760px, rgba(95,95,95,1) 760px)',
+    backgroundGradientTablet:
+      'linear-gradient(180deg, rgba(32,32,37,1) 674px, rgba(95,95,95,1) 674px)',
     background: '#202025',
     backroundSecond: '#5F5F5F',
     backroundBurger: '#679DE3',

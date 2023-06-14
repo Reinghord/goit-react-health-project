@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { ThemeContainer, Checkbox, Ball } from './ThemeSwitching.styled.js';
 import { light, dark } from './Theme.styled';
 import { ThemeProvider } from 'styled-components';
+import { GlobalStyles } from './Global.js';
 
 export const ThemeSwitching = ({ children }) => {
   useEffect(() => {
@@ -32,6 +33,7 @@ export const ThemeSwitching = ({ children }) => {
   };
   return (
     <ThemeProvider theme={selectedTheme}>
+      <GlobalStyles />
       <ThemeContainer>
         <Checkbox
           type="checkbox"

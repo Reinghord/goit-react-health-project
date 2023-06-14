@@ -23,7 +23,6 @@ import { PrivateRoute } from './PrivateRoute';
 import { Layout } from './Layout/Layout';
 import PageNotFound from './PageNotFound/PageNotFound';
 
-import { GlobalStyles } from './styles/Global';
 import { ThemeSwitching } from './styles/ThemeSwiching';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -38,7 +37,6 @@ export const App = () => {
   return (
     <>
       <ThemeSwitching>
-        <GlobalStyles />
         <Suspense>
           {/* fallback={<Loader />}> */}
           <Routes>
