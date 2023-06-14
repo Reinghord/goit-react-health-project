@@ -1,7 +1,7 @@
 export const light = {
   name: 'light-theme',
   colors: {
-    switcherOn: '#000000',
+    switcherOn: '#202025',
 
     firstText: '#212121',
     secondText: '#9B9FAA',
@@ -36,7 +36,7 @@ export const dark = {
     firstText: '#DDDDDD',
     secondText: '#ECECEC',
 
-    buttonText: '#000000',
+    buttonText: '#202025',
     buttonTextHover: '#3B3B3B',
     button: '#FF6B00',
     buttonHover: '#CB5600',
@@ -47,7 +47,7 @@ export const dark = {
     borderLight: 'rgba(255, 219, 193, 0.5)',
     borderActive: '#DDDDDD',
 
-    background: '#000000',
+    background: '#202025',
     backroundSecond: '#5F5F5F',
     backroundBurger: '#679DE3',
     backgroundMobile: '#737373',

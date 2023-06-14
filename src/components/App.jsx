@@ -37,55 +37,58 @@ export const App = () => {
 
   return (
     <>
-      <Suspense>
-        {/* fallback={<Loader />}> */}
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<CalculatorCalorieForm />} />
-            <Route
-              path="registration"
-              element={
-                <PublicRoute>
-                  <Register />
-                </PublicRoute>
-              }
-            />
-            <Route
-              path="login"
-              element={
-                <PublicRoute restricted>
-                  <Login />
-                </PublicRoute>
-              }
-            />
-            <Route
-              path="calculator"
-              element={
-                <PrivateRoute>
-                  <CalculatorCalorieForm />
-                </PrivateRoute>
-              }
-            />
-            <Route
-              path="diary"
-              element={
-                <PrivateRoute>
-                  <DiaryDateCalendar />
-                </PrivateRoute>
-              }
-            />
-            <Route
-              path="menu"
-              element={
-                <PrivateRoute>
-                  <DiaryProductList />
-                </PrivateRoute>
-              }
-            />
-            <Route path="*" element={<PageNotFound />} />
-          </Route>
-        </Routes>
-      </Suspense>
+      <ThemeSwitching>
+        <GlobalStyles />
+        <Suspense>
+          {/* fallback={<Loader />}> */}
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<CalculatorCalorieForm />} />
+              <Route
+                path="registration"
+                element={
+                  <PublicRoute>
+                    <Register />
+                  </PublicRoute>
+                }
+              />
+              <Route
+                path="login"
+                element={
+                  <PublicRoute restricted>
+                    <Login />
+                  </PublicRoute>
+                }
+              />
+              <Route
+                path="calculator"
+                element={
+                  <PrivateRoute>
+                    <CalculatorCalorieForm />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="diary"
+                element={
+                  <PrivateRoute>
+                    <DiaryDateCalendar />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="menu"
+                element={
+                  <PrivateRoute>
+                    <DiaryProductList />
+                  </PrivateRoute>
+                }
+              />
+              <Route path="*" element={<PageNotFound />} />
+            </Route>
+          </Routes>
+        </Suspense>
+      </ThemeSwitching>
       {/* <Header></Header>
       <Navigation></Navigation>
       <UserInfo></UserInfo>

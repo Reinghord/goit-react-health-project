@@ -35,6 +35,7 @@ export const ThemeSwitching = ({ children }) => {
       <ThemeContainer>
         <Checkbox
           type="checkbox"
+          checked={checked}
           value={checked}
           onChange={() => {
             HandleThemeChange(selectedTheme);
