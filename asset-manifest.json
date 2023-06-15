@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/goit-react-health-project/static/css/main.0c9f28d4.css",
-    "main.js": "/goit-react-health-project/static/js/main.74fab07e.js",
+    "main.js": "/goit-react-health-project/static/js/main.270745af.js",
     "static/media/Strawberry-desktop@2x-min.png": "/goit-react-health-project/static/media/Strawberry-desktop@2x-min.744c0c9dedde7d83f85c.png",
     "static/media/main-banan-tablet@2x-min.png": "/goit-react-health-project/static/media/main-banan-tablet@2x-min.7b91d5da2f7a5776d2bf.png",
     "static/media/banan-desktop@2x-min.png": "/goit-react-health-project/static/media/banan-desktop@2x-min.c4f3073fed5663db7e45.png",
@@ -51,10 +51,10 @@
     "index.html": "/goit-react-health-project/index.html",
     "static/media/icons.svg": "/goit-react-health-project/static/media/icons.6034ce9fdb0cfdb148f8a67d04e5e3a6.svg",
     "main.0c9f28d4.css.map": "/goit-react-health-project/static/css/main.0c9f28d4.css.map",
-    "main.74fab07e.js.map": "/goit-react-health-project/static/js/main.74fab07e.js.map"
+    "main.270745af.js.map": "/goit-react-health-project/static/js/main.270745af.js.map"
   },
   "entrypoints": [
     "static/css/main.0c9f28d4.css",
-    "static/js/main.74fab07e.js"
+    "static/js/main.270745af.js"
   ]
 }
