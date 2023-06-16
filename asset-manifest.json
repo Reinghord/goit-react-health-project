@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/goit-react-health-project/static/css/main.d5902edf.css",
-    "main.js": "/goit-react-health-project/static/js/main.342769c3.js",
+    "main.js": "/goit-react-health-project/static/js/main.a378acb8.js",
     "static/media/Strawberry-desktop@2x-min.png": "/goit-react-health-project/static/media/Strawberry-desktop@2x-min.744c0c9dedde7d83f85c.png",
     "static/media/main-banan-tablet@2x-min.png": "/goit-react-health-project/static/media/main-banan-tablet@2x-min.7b91d5da2f7a5776d2bf.png",
     "static/media/main-strawberry-tablet@2x-min.png": "/goit-react-health-project/static/media/main-strawberry-tablet@2x-min.4bff7c0cbc186b24f5b9.png",
@@ -14,28 +14,28 @@
     "static/media/main-strawberry-tablet@2x-min.webp": "/goit-react-health-project/static/media/main-strawberry-tablet@2x-min.0ee09a733357a2e5b08e.webp",
     "static/media/main-strawberry-tablet@1x-min.png": "/goit-react-health-project/static/media/main-strawberry-tablet@1x-min.fb564c2aaabedc2593e0.png",
     "static/media/main-leaf-desktop@1x-min.png": "/goit-react-health-project/static/media/main-leaf-desktop@1x-min.1d0977f6a1a80da94e8f.png",
-    "static/media/main-strawberry-tablet_2x-min.avif": "/goit-react-health-project/static/media/main-strawberry-tablet_2x-min.1b1fd75ad92a96936a6a.avif",
     "static/media/main-leaf-desktop@2x-min.webp": "/goit-react-health-project/static/media/main-leaf-desktop@2x-min.e9750e19d96ea6cd9eeb.webp",
     "static/media/Strawberry-desktop@2x-min.avif": "/goit-react-health-project/static/media/Strawberry-desktop@2x-min.0e0d33a6bf8f25cf94ae.avif",
     "static/media/main-leaf-tablet@1x-min.png": "/goit-react-health-project/static/media/main-leaf-tablet@1x-min.1110806d7ae1e54afcd7.png",
     "static/media/Strawberry-desktop@1x-min.webp": "/goit-react-health-project/static/media/Strawberry-desktop@1x-min.0baf8ed5c7596d6e60c1.webp",
     "static/media/main-leaf-tablet@2x-min.webp": "/goit-react-health-project/static/media/main-leaf-tablet@2x-min.ef3b4ce27b03833a0051.webp",
+    "static/media/main-strawberry-tablet@2x-min.avif": "/goit-react-health-project/static/media/main-strawberry-tablet@2x-min.c04a8243751ea42a1005.avif",
     "static/media/main-banan-tablet@1x-min.webp": "/goit-react-health-project/static/media/main-banan-tablet@1x-min.c52ee367b6797229f251.webp",
     "static/media/main-strawberry-tablet@1x-min.webp": "/goit-react-health-project/static/media/main-strawberry-tablet@1x-min.a2375f78703bb2e36b3e.webp",
-    "static/media/main-banan-tablet_2x-min.avif": "/goit-react-health-project/static/media/main-banan-tablet_2x-min.9042bf6454ebde78509d.avif",
     "static/media/linia-desktop@2x-min.png": "/goit-react-health-project/static/media/linia-desktop@2x-min.454f9c268ed3a1070f09.png",
     "static/media/main-leaf-desktop@1x-min.webp": "/goit-react-health-project/static/media/main-leaf-desktop@1x-min.67c5f0349de2b4eed3ba.webp",
-    "static/media/main-strawberry-tablet_1x-min.avif": "/goit-react-health-project/static/media/main-strawberry-tablet_1x-min.e1d11c567da42d66dca2.avif",
     "static/media/Strawberry-desktop@1x-min.avif": "/goit-react-health-project/static/media/Strawberry-desktop@1x-min.32e73a0642f4545b4ab5.avif",
     "static/media/linia-tablet@2x-min.png": "/goit-react-health-project/static/media/linia-tablet@2x-min.fc7e5303b42dbcc105cb.png",
     "static/media/main-leaf-tablet@1x-min.webp": "/goit-react-health-project/static/media/main-leaf-tablet@1x-min.7dff1b1ae797906f9c0b.webp",
+    "static/media/main-strawberry-tablet@1x-min.avif": "/goit-react-health-project/static/media/main-strawberry-tablet@1x-min.13a28fab5273c217e7cb.avif",
     "static/media/main-leaf-desktop@2x-min.avif": "/goit-react-health-project/static/media/main-leaf-desktop@2x-min.3883d8669e7993ed6f64.avif",
-    "static/media/main-banan-tablet_1x-min.avif": "/goit-react-health-project/static/media/main-banan-tablet_1x-min.1b8e30e9d228fc1b29c3.avif",
+    "static/media/main-banan-tablet@2x-min.avif": "/goit-react-health-project/static/media/main-banan-tablet@2x-min.23c8b732e4632bdf8993.avif",
     "static/media/linia-desktop@2x-min.webp": "/goit-react-health-project/static/media/linia-desktop@2x-min.99c67da6603c7963f079.webp",
     "static/media/main-leaf-tablet@2x-min.avif": "/goit-react-health-project/static/media/main-leaf-tablet@2x-min.87a0b698407024727077.avif",
     "static/media/linia-desktop@2x-min.avif": "/goit-react-health-project/static/media/linia-desktop@2x-min.1339dee371fdb897d3ee.avif",
     "static/media/linia-tablet@2x-min.webp": "/goit-react-health-project/static/media/linia-tablet@2x-min.5c73e00d3bd5783d4363.webp",
     "static/media/main-leaf-desktop@1x-min.avif": "/goit-react-health-project/static/media/main-leaf-desktop@1x-min.e19fa8a1a89c0e3aceb2.avif",
+    "static/media/main-banan-tablet@1x-min.avif": "/goit-react-health-project/static/media/main-banan-tablet@1x-min.b3fe0fba6b785ee2c21c.avif",
     "static/media/linia-tablet@2x-min.avif": "/goit-react-health-project/static/media/linia-tablet@2x-min.05b8f7e8c63f00b94c34.avif",
     "static/media/linia-desktop@1x-min.avif": "/goit-react-health-project/static/media/linia-desktop@1x-min.e5eeb761b6b4f907fd92.avif",
     "static/media/main-leaf-tablet@1x-min.avif": "/goit-react-health-project/static/media/main-leaf-tablet@1x-min.c420846449cd13153560.avif",
@@ -45,10 +45,10 @@
     "index.html": "/goit-react-health-project/index.html",
     "static/media/icons.svg": "/goit-react-health-project/static/media/icons.6034ce9fdb0cfdb148f8a67d04e5e3a6.svg",
     "main.d5902edf.css.map": "/goit-react-health-project/static/css/main.d5902edf.css.map",
-    "main.342769c3.js.map": "/goit-react-health-project/static/js/main.342769c3.js.map"
+    "main.a378acb8.js.map": "/goit-react-health-project/static/js/main.a378acb8.js.map"
   },
   "entrypoints": [
     "static/css/main.d5902edf.css",
-    "static/js/main.342769c3.js"
+    "static/js/main.a378acb8.js"
   ]
 }
