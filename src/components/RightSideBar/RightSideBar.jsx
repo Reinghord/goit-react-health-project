@@ -15,6 +15,7 @@ import { useSelector } from 'react-redux';
 import { getDaySummary } from 'redux/day/day-selectors';
 import { getNotAllowedProducts } from 'redux/auth/auth-selectors';
 import { nanoid } from 'nanoid';
+import PropTypes from 'prop-types';
 
 export const RightSideBar = () => {
   const daySummary = useSelector(getDaySummary);
@@ -82,4 +83,15 @@ export const RightSideBar = () => {
       </BoxList>
     </Box>
   );
+};
+
+RightSideBar.propTypes = {
+  daySummary: PropTypes.shape({
+    date: PropTypes.string,
+    dailyRate: PropTypes.number,
+    kcalLeft: PropTypes.number,
+    kcalConsumed: PropTypes.number,
+    percentsOfDailyRate: PropTypes.number,
+  }),
+  notAllowedProducts: PropTypes.arrayOf(PropTypes.string),
 };
