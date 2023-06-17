@@ -1,28 +1,24 @@
 import styled from 'styled-components';
 import { breakpoints } from '../../styles/breakpoints';
 import { StyledBtnAuthAccent } from '../../Login/Login.styled.jsx';
-const { tablet, desktop } = breakpoints;
+const { tablet} = breakpoints;
 
 export const Wrapper = styled.div`
-  margin-bottom: 119px;
+  margin-bottom: 60px;
   @media screen and (min-width: ${tablet}) {
-    margin-bottom: 80px;
-  }
-  @media screen and (min-width: ${desktop}) {
-    margin-bottom: 82px;
+    margin-bottom: 40px;
   }
 `;
 export const Title = styled.h2`
   font-size: 18px;
   line-height: 1.4;
-  /* color: #212121; */
   color: ${({ theme }) => theme.colors.firstText};
   padding: 0;
-  margin: 40px 0 42px 0;
+  margin: 40px 0 20px 0;
   @media screen and (min-width: ${tablet}) {
     font-size: 26px;
     text-align: center;
-    margin: 64px 0 20px 0;
+    margin: 40px 0 20px 0;
   }
 `;
 
@@ -38,7 +34,6 @@ export const Calories = styled.h1`
   font-size: 48px;
   line-height: 1.2;
   color: ${({ theme }) => theme.colors.scroll};
-  /* color: #264061; */
 `;
 
 export const Kkal = styled.span`
@@ -46,12 +41,10 @@ export const Kkal = styled.span`
   line-height: 1.2;
   text-align: center;
   color: ${({ theme }) => theme.colors.scroll};
-  /* color: #264061; */
 `;
 
 export const Recommend = styled.div`
-  /* border-top: 1px solid #e0e0e0; */
-  border-top: ${({ theme }) => theme.colors.borderInput};
+  border-top: 1px solid ${({ theme }) => theme.colors.borderInput};
   margin-bottom: 40px;
   width: 280px;
   height: 263;
@@ -68,7 +61,7 @@ export const Caption = styled.h3`
   font-size: 14px;
   line-height: 1.2;
   color: ${({ theme }) => theme.colors.firstText};
-  /* color: #212121; */
+
   @media screen and (min-width: ${tablet}) {
     margin: 12px 0 20px 5px;
   }
@@ -81,17 +74,18 @@ export const ProductsList = styled.ul`
   flex-direction: column;
   justify-content: start;
   overflow-y: scroll;
-  height: 112px;
+  height: 192px;
   width: 100%;
   &::-webkit-scrollbar {
     width: 6px;
     background-color: ${({ theme }) => theme.colors.backroundSecond};
-    /* background-color: #f0f1f3; */
   }
 
   &::-webkit-scrollbar-thumb {
     background: ${({ theme }) => theme.colors.scroll};
-    /* background: #264061; */
+  }
+  @media screen and (min-width: ${tablet}) {
+    height: 172px;
   }
 `;
 
@@ -106,7 +100,6 @@ export const Product = styled.p`
   font-size: 14px;
   line-height: 1.2;
   color: ${({ theme }) => theme.colors.secondText};
-  /* color: #9b9faa; */
 `;
 
 export const EnterButton = styled(StyledBtnAuthAccent)`

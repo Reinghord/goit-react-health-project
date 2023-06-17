@@ -9,7 +9,6 @@ export const Overlay = styled.div`
   inset: 0;
   width: 100vw;
   height: 100vh;
-  /* background: rgba(33, 33, 33, 0.12); */
   background: ${({ theme }) => theme.colors.backgroundModal};
 `;
 
@@ -23,7 +22,6 @@ export const ModalContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 20px;
-  /* background: #ffffff; */
   background: ${({ theme }) => theme.colors.background};
   box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
   max-width: 320px;
@@ -44,7 +42,6 @@ export const CloseModal = styled.button`
     right: 20px;
     width: 20px;
     height: 20px;
-    /* background: #ffffff; */
     background: ${({ theme }) => theme.colors.background};
 
     &:hover,
