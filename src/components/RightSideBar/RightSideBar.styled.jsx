@@ -1,45 +1,71 @@
 import styled from 'styled-components';
 
+
 export const Box = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  
   padding: 40px 20px 12px 20px;
-  /* background-color: #f0f1f3; */
 
   @media screen and (max-width: 320px) {
-    width: 320px;
-    margin-left: -20px;
+    width: 100%;
   }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    margin-left: -32px;
-    flex-direction: row;
-    padding: 80px 32px 40px 32px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 517px;
-    min-height: 100vh;
+  
+  @media screen and (min-width: 321px) and (max-width: 767px) {
     flex-direction: column;
-    margin-top: -168px;
-    padding: 292px 123px 0 106px;
+    padding: 40px 32px 40px 32px;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    flex-direction: row;
+    justify-content: center;
+    padding: 91px 87px ;
+    margin-top: 110px
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 40%; // изменено на проценты
+    min-height: 100vh;
+    margin-left: 20%; 
+    align-items: flex-start;
   }
 `;
+
 
 export const BoxList = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 0;
+   &:not(:last-child) {
+      margin-right: 97px;
+    }
+  }
+
   @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 97px;
+    }
+    margin-bottom: 60px;
     width: 288px;
     height: 178px;
+
     &:last-child {
-      margin-bottom: 0;
+      margin-bottom: 60px;
+      margin-right: 0;
     }
   }
 `;
-
 export const ListTitle = styled.p`
   font-family: 'Verdana';
   font-style: normal;
@@ -50,7 +76,9 @@ export const ListTitle = styled.p`
   color: #212121;
   text-align: start;
   margin-bottom: 30px;
+  
 `;
+
 
 export const List = styled.ul`
   list-style: none;
@@ -60,12 +88,12 @@ export const List = styled.ul`
   list-style-position: inside;
   margin: 0;
   padding: 0;
+  min-width: 270px;
   max-width: 400px;
   max-height: 180px;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  z-index: 10;
-
+  
   &::-webkit-scrollbar {
     width: 6px;
     background-color: #f0f1f3;
@@ -74,7 +102,12 @@ export const List = styled.ul`
   &::-webkit-scrollbar-thumb {
     background: #264061;
   }
+
+  padding-right: 0;
+  margin-right: 0;
 `;
+
+
 
 export const Item = styled.li`
   font-family: 'Verdana';
@@ -85,7 +118,6 @@ export const Item = styled.li`
   letter-spacing: 0.04em;
   color: #9b9faa;
   margin-bottom: 20px;
-
   &:last-child {
     margin-bottom: 0;
   }
@@ -116,6 +148,7 @@ export const ContainerItem = styled.div`
   margin-bottom: 20px;
   &:last-child {
     margin-bottom: 0;
+  
   }
 `;
 
@@ -127,5 +160,7 @@ export const Title = styled.div`
 `;
 
 export const Content = styled.div`
+display: flex;
+    justify-content: flex-end;
   width: 88px;
 `;
