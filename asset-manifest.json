@@ -1,7 +1,18 @@
 {
   "files": {
-    "main.css": "/goit-react-health-project/static/css/main.98a4bc91.css",
-    "main.js": "/goit-react-health-project/static/js/main.9f726820.js",
+    "main.css": "/goit-react-health-project/static/css/main.0c9f28d4.css",
+    "main.js": "/goit-react-health-project/static/js/main.655365f2.js",
+    "static/js/892.9f44a226.chunk.js": "/goit-react-health-project/static/js/892.9f44a226.chunk.js",
+    "static/js/607.21418258.chunk.js": "/goit-react-health-project/static/js/607.21418258.chunk.js",
+    "static/js/485.486362b1.chunk.js": "/goit-react-health-project/static/js/485.486362b1.chunk.js",
+    "static/js/870.a1fe0492.chunk.js": "/goit-react-health-project/static/js/870.a1fe0492.chunk.js",
+    "static/css/734.7ba264ef.chunk.css": "/goit-react-health-project/static/css/734.7ba264ef.chunk.css",
+    "static/js/734.5d714b79.chunk.js": "/goit-react-health-project/static/js/734.5d714b79.chunk.js",
+    "static/js/530.261b62ed.chunk.js": "/goit-react-health-project/static/js/530.261b62ed.chunk.js",
+    "static/js/632.bd3b978f.chunk.js": "/goit-react-health-project/static/js/632.bd3b978f.chunk.js",
+    "static/js/409.c1df4afd.chunk.js": "/goit-react-health-project/static/js/409.c1df4afd.chunk.js",
+    "static/js/390.12c3d3b1.chunk.js": "/goit-react-health-project/static/js/390.12c3d3b1.chunk.js",
+    "static/js/723.3e01513e.chunk.js": "/goit-react-health-project/static/js/723.3e01513e.chunk.js",
     "static/media/banana@2x.png": "/goit-react-health-project/static/media/banana@2x.b47deb41a8b95af253e1.png",
     "static/media/banana-tablet@2x.png": "/goit-react-health-project/static/media/banana-tablet@2x.af0a50be7e6caab9f82a.png",
     "static/media/Strawberry-desktop@2x-min.png": "/goit-react-health-project/static/media/Strawberry-desktop@2x-min.744c0c9dedde7d83f85c.png",
@@ -71,11 +82,22 @@
     "static/media/leaf-bottom-tablet@1x-min.avif": "/goit-react-health-project/static/media/leaf-bottom-tablet@1x-min.d8bcebfffb56fd3bd6d9.avif",
     "index.html": "/goit-react-health-project/index.html",
     "static/media/icons.svg": "/goit-react-health-project/static/media/icons.6034ce9fdb0cfdb148f8a67d04e5e3a6.svg",
-    "main.98a4bc91.css.map": "/goit-react-health-project/static/css/main.98a4bc91.css.map",
-    "main.9f726820.js.map": "/goit-react-health-project/static/js/main.9f726820.js.map"
+    "main.0c9f28d4.css.map": "/goit-react-health-project/static/css/main.0c9f28d4.css.map",
+    "main.655365f2.js.map": "/goit-react-health-project/static/js/main.655365f2.js.map",
+    "892.9f44a226.chunk.js.map": "/goit-react-health-project/static/js/892.9f44a226.chunk.js.map",
+    "607.21418258.chunk.js.map": "/goit-react-health-project/static/js/607.21418258.chunk.js.map",
+    "485.486362b1.chunk.js.map": "/goit-react-health-project/static/js/485.486362b1.chunk.js.map",
+    "870.a1fe0492.chunk.js.map": "/goit-react-health-project/static/js/870.a1fe0492.chunk.js.map",
+    "734.7ba264ef.chunk.css.map": "/goit-react-health-project/static/css/734.7ba264ef.chunk.css.map",
+    "734.5d714b79.chunk.js.map": "/goit-react-health-project/static/js/734.5d714b79.chunk.js.map",
+    "530.261b62ed.chunk.js.map": "/goit-react-health-project/static/js/530.261b62ed.chunk.js.map",
+    "632.bd3b978f.chunk.js.map": "/goit-react-health-project/static/js/632.bd3b978f.chunk.js.map",
+    "409.c1df4afd.chunk.js.map": "/goit-react-health-project/static/js/409.c1df4afd.chunk.js.map",
+    "390.12c3d3b1.chunk.js.map": "/goit-react-health-project/static/js/390.12c3d3b1.chunk.js.map",
+    "723.3e01513e.chunk.js.map": "/goit-react-health-project/static/js/723.3e01513e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98a4bc91.css",
-    "static/js/main.9f726820.js"
+    "static/css/main.0c9f28d4.css",
+    "static/js/main.655365f2.js"
   ]
 }
