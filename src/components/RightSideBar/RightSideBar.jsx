@@ -19,6 +19,7 @@ import { nanoid } from 'nanoid';
 export const RightSideBar = () => {
   const daySummary = useSelector(getDaySummary);
   const notAllowedProducts = useSelector(getNotAllowedProducts);
+  const lang = useSelector(state => state.auth.lang);
 
   const normalizedSelectedDate = new Date(daySummary?.date || new Date())
     .toISOString()
@@ -27,36 +28,36 @@ export const RightSideBar = () => {
   return (
     <Box>
       <BoxList>
-        <ListTitle>Summary for {normalizedSelectedDate}</ListTitle>
+        <ListTitle>{lang.summaryTitle} {normalizedSelectedDate}</ListTitle>
         <Container>
           <ContainerItem>
-            <Title>Left</Title>
+            <Title>{lang.leftTitle}</Title>
             <Content>
               {daySummary?.dailyRate > 0 ? Math.round(daySummary.kcalLeft) : 0}{' '}
-              kcal
+              {lang.kcal}
             </Content>{' '}
           </ContainerItem>
           <ContainerItem>
-            <Title>Consumed</Title>
+            <Title>{lang.consumedTitle}</Title>
             <Content>
               {daySummary?.dailyRate > 0
                 ? Math.round(daySummary.kcalConsumed)
                 : 0}{' '}
-              kcal{' '}
+              {lang.kcal}{' '}
             </Content>
           </ContainerItem>
           <ContainerItem>
-            <Title>Daily rate </Title>
+            <Title>{lang.dailyRateTitle} </Title>
             <Content>
               {' '}
               {daySummary?.dailyRate > 0
                 ? Math.round(daySummary.dailyRate)
                 : 0}{' '}
-              kcal{' '}
+              {lang.kcal}{' '}
             </Content>
           </ContainerItem>
           <ContainerItem>
-            <Title>% of normal</Title>
+            <Title>{lang.percentNormal}</Title>
             <Content>
               {daySummary?.dailyRate > 0
                 ? Math.round(daySummary.percentsOfDailyRate)
@@ -67,7 +68,7 @@ export const RightSideBar = () => {
         </Container>
       </BoxList>
       <BoxList>
-        <ListTitle>Food not recommended</ListTitle>
+        <ListTitle>{lang.notRecomended}</ListTitle>
         {daySummary?.dailyRate > 0 ? (
           <List>
             {notAllowedProducts.map((product, idx) => (
@@ -77,7 +78,7 @@ export const RightSideBar = () => {
             ))}
           </List>
         ) : (
-          <PreContent> Your diet will be displayed here </PreContent>
+          <PreContent> {lang.yourDiet} </PreContent>
         )}
       </BoxList>
     </Box>

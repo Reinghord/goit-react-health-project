@@ -38,6 +38,7 @@ import LanguageBar from 'components/LanguageBar/LanguageBar';
 function Header() {
   const [isOpen, setOpen] = useState(false);
   const isUserLogin = useSelector(getIsLoggedIn);
+  const lang = useSelector(state => state.auth.lang);
   const openHandler = () => {
     setOpen(!isOpen);
   };
@@ -99,10 +100,10 @@ function Header() {
                 <LanguageBar />
               </NavigationItem>
               <NavigationItem>
-                <NavLink to="diary">Diary</NavLink>
+                <NavLink to="diary">{lang.diary}</NavLink>
               </NavigationItem>
               <NavigationItem>
-                <NavItem to="calculator">Calculator</NavItem>
+                <NavItem to="calculator">{lang.calculator}</NavItem>
               </NavigationItem>
             </NavigationList>
           </Wrapper>

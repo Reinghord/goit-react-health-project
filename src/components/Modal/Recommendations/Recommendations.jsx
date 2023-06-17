@@ -26,6 +26,7 @@ function Recommendations() {
   const products = useSelector(getDaily);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const lang = useSelector(state => state.auth.lang);
 
   const handleStartLoseWeight = () => {
     dispatch(toggleModal(!isModalOpen));
@@ -35,17 +36,17 @@ function Recommendations() {
   return (
     <Wrapper>
       <Title>
-        Your recommended daily <br />
-        calorie intake is
+        {lang.modalTitleStart} <br />
+        {lang.modalTitleFinish}
       </Title>
       <CaloriesWrapper>
         <Calories>
           {Math.trunc(products.dailyRate)}
-          <Kkal> kkal</Kkal>
+          <Kkal> {lang.kcal}</Kkal>
         </Calories>
       </CaloriesWrapper>
       <Recommend>
-        <Caption>Foods you should not eat</Caption>
+        <Caption>{lang.modalListTitle}</Caption>
         <ProductsList>
           {products.notAllowedProducts.map((product, idx) => (
             <ProductItem key={nanoid()}>
@@ -58,7 +59,7 @@ function Recommendations() {
       </Recommend>
 
       <EnterButton type="button" onClick={handleStartLoseWeight}>
-        Start losing weight
+        {lang.buttonStartloseweight}
       </EnterButton>
     </Wrapper>
   );

@@ -10,6 +10,7 @@ function DiaryProductListItem({ valueDate }) {
   const dispatch = useDispatch();
   let selectedDate = useMemo(() => ({ date: valueDate }), [valueDate]);
   const [deletedObjects, setDeletedObjects] = useState([]);
+  const lang = useSelector(state => state.auth.lang);
 
   const handleDeleteFood = (eatenProductId, index) => {
     if (deletedObjects.includes(index)) {
@@ -41,8 +42,8 @@ function DiaryProductListItem({ valueDate }) {
       {eatenProducts.map((eaten, index) => (
         <css.ListItem key={eaten.id}>
           <css.PName>{eaten.title}</css.PName>{' '}
-          <css.PGrame>{eaten.weight} g</css.PGrame>{' '}
-          <css.PKcal>{eaten.kcal.toFixed(0)} <css.Kcal>kcal</css.Kcal></css.PKcal>{' '}
+          <css.PGrame>{eaten.weight} {lang.gramm}</css.PGrame>{' '}
+          <css.PKcal>{eaten.kcal.toFixed(0)} <css.Kcal>{lang.kcal}</css.Kcal></css.PKcal>{' '}
           <css.Button
             onClick={() => handleDeleteFood(eaten.id, index)}
             type="button"

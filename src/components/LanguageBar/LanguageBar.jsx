@@ -6,7 +6,6 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   position: relative;
-  margin-left: -5px;
   @media screen and (min-width: 768px) {
   .container {
     margin-left: 10px;
@@ -23,7 +22,7 @@ const IconStyled = styled(Icon)`
 `;
 const List = styled.ul`
   position: absolute;
-  left: -70px;
+  left: 24px;
   top: 20px;
   padding: 3px;
   font-size: 10px;

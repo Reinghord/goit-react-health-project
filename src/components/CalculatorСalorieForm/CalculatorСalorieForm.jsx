@@ -45,6 +45,7 @@ function CalculatorCalorieForm() {
   const dispatch = useDispatch();
   const isLoggedIn = useSelector(getIsLoggedIn);
   const isModalOpen = useSelector(getIsModalOpen);
+  const lang = useSelector(state => state.auth.lang);
 
   const startValue = {
     weight: userData.weight || userCalcData.weight,
@@ -84,7 +85,7 @@ function CalculatorCalorieForm() {
   return (
     <StyledWrapCaloriesCalc>
       <StyledHeaderCaloriesCalc>
-        Calculate your daily calorie intake right now
+        {lang.caclulateTitleStart}
       </StyledHeaderCaloriesCalc>
       <Formik
         onSubmit={handleSubmit}
@@ -99,7 +100,7 @@ function CalculatorCalorieForm() {
                 name="height"
                 placeholder=" "
               />
-              <StyledLabelCaloriesCalc>Height *</StyledLabelCaloriesCalc>
+              <StyledLabelCaloriesCalc>{lang.placeholderHeight}</StyledLabelCaloriesCalc>
               <ErrorMessage name="height">
                 {m => (
                   <StyledErrorCaloriesCalc>
@@ -116,7 +117,7 @@ function CalculatorCalorieForm() {
                 name="age"
                 placeholder=" "
               />
-              <StyledLabelCaloriesCalc>Age *</StyledLabelCaloriesCalc>
+              <StyledLabelCaloriesCalc>{lang.placeholderAge}</StyledLabelCaloriesCalc>
               <ErrorMessage name="age">
                 {m => (
                   <StyledErrorCaloriesCalc>
@@ -134,7 +135,7 @@ function CalculatorCalorieForm() {
                 placeholder=" "
               />
               <StyledLabelCaloriesCalc>
-                Current weight *
+                {lang.placeholderWeight}
               </StyledLabelCaloriesCalc>
               <ErrorMessage name="weight">
                 {m => (
@@ -153,7 +154,7 @@ function CalculatorCalorieForm() {
                 placeholder=" "
               />
               <StyledLabelCaloriesCalc>
-                Desired weight *
+                {lang.placeholderDesiredWeight}
               </StyledLabelCaloriesCalc>
               <ErrorMessage name="desiredWeight">
                 {m => (
@@ -167,7 +168,7 @@ function CalculatorCalorieForm() {
 
             <div>
               <StyledLabelBTCaloriesCalc id="typeLabel">
-                Blood type *
+                {lang.bloodType}
               </StyledLabelBTCaloriesCalc>
 
               <StyledRadioBtnsBTCaloriesCalc
@@ -230,7 +231,7 @@ function CalculatorCalorieForm() {
             </div>
             <BtnWrapCaloriesCalc id="submitButton">
               <StyledBtnCaloriesCalc type="submit">
-                Start losing weight
+                {lang.buttonStartloseweight}
               </StyledBtnCaloriesCalc>
             </BtnWrapCaloriesCalc>
           </StyledFormCaloriesCalc>

@@ -20,6 +20,7 @@ function UserInfo() {
   const isModalOpen = useSelector(getIsModalOpen);
   const isLoggedIn = useSelector(getIsLoggedIn);
   const dispatch = useDispatch();
+  const lang = useSelector(state => state.auth.lang);
 
   const onLogout = () => {
     dispatch(logOut());
@@ -45,7 +46,7 @@ function UserInfo() {
         <>
           {username && <StyledTitle>{username}</StyledTitle>}
           <NavUserInfo />
-          <Button onClick={onLogout}>Exit</Button>
+          <Button onClick={onLogout}>{lang.exit}</Button>
         </>
       ) : (
         <></>

@@ -1,5 +1,5 @@
 import { Formik, ErrorMessage } from 'formik';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { register, logIn } from 'redux/auth/auth-operations';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -42,6 +42,7 @@ let schema = yup.object({
 });
 function Register() {
   const dispatch = useDispatch();
+  const lang = useSelector(state => state.auth.lang);
   const startValue = {
     email: '',
     password: '',
@@ -58,7 +59,7 @@ function Register() {
     <>
       <GlobalTablet />
       <AuthWrapComponent>
-        <StyledHeaderAuth>Sign Up</StyledHeaderAuth>
+        <StyledHeaderAuth>{lang.register}</StyledHeaderAuth>
         <Formik
           onSubmit={handleSubmit}
           validationSchema={schema}
@@ -67,7 +68,7 @@ function Register() {
           <StyledFormAuth>
             <StyledWrapInputAuth>
               <StyledInputAuth type="text" name="username" placeholder=" " />
-              <StyledLabelAuth>Name *</StyledLabelAuth>
+              <StyledLabelAuth>{lang.namePlaceholder}</StyledLabelAuth>
               <ErrorMessage name="username">
                 {m => (
                   <StyledErrorAuth>
@@ -80,7 +81,7 @@ function Register() {
 
             <StyledWrapInputAuth>
               <StyledInputAuth type="email" name="email" placeholder=" " />
-              <StyledLabelAuth>Email *</StyledLabelAuth>
+              <StyledLabelAuth>{lang.emailPlaceholder}</StyledLabelAuth>
               <ErrorMessage name="email">
                 {m => (
                   <StyledErrorAuth>
@@ -99,7 +100,7 @@ function Register() {
                 // pattern="/^[a-zA-Z0-9]{8,16}$/"
                 // minlength="8"
               />
-              <StyledLabelAuth>Password *</StyledLabelAuth>
+              <StyledLabelAuth>{lang.passwordPlaceholder}</StyledLabelAuth>
 
               <ErrorMessage name="password">
                 {m => (
@@ -111,7 +112,7 @@ function Register() {
               </ErrorMessage>
             </StyledWrapInputAuth>
             <StyledWrapAuthBtn>
-              <StyledBtnAuthAccent type="submit">Sign Up</StyledBtnAuthAccent>
+              <StyledBtnAuthAccent type="submit">{lang.register}</StyledBtnAuthAccent>
               {/* <StyledLinkAuth to="/login">Log in</StyledLinkAuth> */}
             </StyledWrapAuthBtn>
           </StyledFormAuth>
