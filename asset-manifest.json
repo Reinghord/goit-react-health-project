@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/goit-react-health-project/static/css/main.0c9f28d4.css",
-    "main.js": "/goit-react-health-project/static/js/main.2591181e.js",
+    "main.js": "/goit-react-health-project/static/js/main.9482e782.js",
     "static/js/892.9f44a226.chunk.js": "/goit-react-health-project/static/js/892.9f44a226.chunk.js",
     "static/js/607.21418258.chunk.js": "/goit-react-health-project/static/js/607.21418258.chunk.js",
     "static/js/485.b0d04da1.chunk.js": "/goit-react-health-project/static/js/485.b0d04da1.chunk.js",
@@ -83,7 +83,7 @@
     "index.html": "/goit-react-health-project/index.html",
     "static/media/icons.svg": "/goit-react-health-project/static/media/icons.6034ce9fdb0cfdb148f8a67d04e5e3a6.svg",
     "main.0c9f28d4.css.map": "/goit-react-health-project/static/css/main.0c9f28d4.css.map",
-    "main.2591181e.js.map": "/goit-react-health-project/static/js/main.2591181e.js.map",
+    "main.9482e782.js.map": "/goit-react-health-project/static/js/main.9482e782.js.map",
     "892.9f44a226.chunk.js.map": "/goit-react-health-project/static/js/892.9f44a226.chunk.js.map",
     "607.21418258.chunk.js.map": "/goit-react-health-project/static/js/607.21418258.chunk.js.map",
     "485.b0d04da1.chunk.js.map": "/goit-react-health-project/static/js/485.b0d04da1.chunk.js.map",
@@ -101,6 +101,6 @@
   },
   "entrypoints": [
     "static/css/main.0c9f28d4.css",
-    "static/js/main.2591181e.js"
+    "static/js/main.9482e782.js"
   ]
 }
