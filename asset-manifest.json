@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/goit-react-health-project/static/css/main.0c9f28d4.css",
-    "main.js": "/goit-react-health-project/static/js/main.9482e782.js",
+    "main.js": "/goit-react-health-project/static/js/main.72ff45a5.js",
     "static/js/892.9f44a226.chunk.js": "/goit-react-health-project/static/js/892.9f44a226.chunk.js",
     "static/js/607.21418258.chunk.js": "/goit-react-health-project/static/js/607.21418258.chunk.js",
     "static/js/485.b0d04da1.chunk.js": "/goit-react-health-project/static/js/485.b0d04da1.chunk.js",
@@ -34,6 +34,7 @@
     "static/media/leaf-desktop@2x-min.png": "/goit-react-health-project/static/media/leaf-desktop@2x-min.0f4149a23b5dd0a76237.png",
     "static/media/main-leaf-desktop@1x-min.png": "/goit-react-health-project/static/media/main-leaf-desktop@1x-min.1d0977f6a1a80da94e8f.png",
     "static/media/leaf-tablet@1x-min.png": "/goit-react-health-project/static/media/leaf-tablet@1x-min.ab2ea6027bcd393c10fa.png",
+    "static/media/logo-img.svg": "/goit-react-health-project/static/media/logo-img.5de574265ba8ba76fd95aea395ff312b.svg",
     "static/media/main-leaf-desktop@2x-min.webp": "/goit-react-health-project/static/media/main-leaf-desktop@2x-min.e9750e19d96ea6cd9eeb.webp",
     "static/media/leaf-bottom-tablet@2x-min.png": "/goit-react-health-project/static/media/leaf-bottom-tablet@2x-min.bbbf87360ac7b41d1ed0.png",
     "static/media/leaf-tablet@2x-min.webp": "/goit-react-health-project/static/media/leaf-tablet@2x-min.850555c9431d7d1ea358.webp",
@@ -69,13 +70,15 @@
     "static/media/banana-tablet.avif": "/goit-react-health-project/static/media/banana-tablet.a655f4f15f3e23f36bbf.avif",
     "static/media/main-leaf-desktop@1x-min.avif": "/goit-react-health-project/static/media/main-leaf-desktop@1x-min.e19fa8a1a89c0e3aceb2.avif",
     "static/media/leaf-desktop@2x-min.avif": "/goit-react-health-project/static/media/leaf-desktop@2x-min.13acf955d0697e2346bb.avif",
-    "static/media/symbol-defs.svg": "/goit-react-health-project/static/media/symbol-defs.76ab59793a76e120c4d4203ddbf1667a.svg",
+    "static/media/symbol-defs.svg": "/goit-react-health-project/static/media/symbol-defs.b3c42bac833f61c0b356bdb8788ba93a.svg",
     "static/media/leaf-tablet@1x-min.avif": "/goit-react-health-project/static/media/leaf-tablet@1x-min.d0d9f293d4e30b1c1983.avif",
     "static/media/linia@2x.avif": "/goit-react-health-project/static/media/linia@2x.1bde070984b571ec5c19.avif",
     "static/media/linia-tablet@2x.avif": "/goit-react-health-project/static/media/linia-tablet@2x.1d1d874c387c355e6c96.avif",
     "static/media/linia.webp": "/goit-react-health-project/static/media/linia.38f76b9be38b71012734.webp",
     "static/media/main-leaf-tablet@1x-min.avif": "/goit-react-health-project/static/media/main-leaf-tablet@1x-min.c420846449cd13153560.avif",
     "static/media/leaf-bottom-tablet@2x-min.avif": "/goit-react-health-project/static/media/leaf-bottom-tablet@2x-min.48bd61a11320c9026d35.avif",
+    "static/media/logo-slim.svg": "/goit-react-health-project/static/media/logo-slim.9078616d31e9a2a7c2469531d80a8764.svg",
+    "static/media/logo-mom.svg": "/goit-react-health-project/static/media/logo-mom.ed9037ccf5a955c1045c2e21e97fb153.svg",
     "static/media/leaf-desktop@1x-min.avif": "/goit-react-health-project/static/media/leaf-desktop@1x-min.cee58a78908480b67fe9.avif",
     "static/media/linia.avif": "/goit-react-health-project/static/media/linia.ec069b21bd176571a2bf.avif",
     "static/media/linia-tablet.avif": "/goit-react-health-project/static/media/linia-tablet.9a2af1da17dd2373e1ed.avif",
@@ -83,7 +86,7 @@
     "index.html": "/goit-react-health-project/index.html",
     "static/media/icons.svg": "/goit-react-health-project/static/media/icons.6034ce9fdb0cfdb148f8a67d04e5e3a6.svg",
     "main.0c9f28d4.css.map": "/goit-react-health-project/static/css/main.0c9f28d4.css.map",
-    "main.9482e782.js.map": "/goit-react-health-project/static/js/main.9482e782.js.map",
+    "main.72ff45a5.js.map": "/goit-react-health-project/static/js/main.72ff45a5.js.map",
     "892.9f44a226.chunk.js.map": "/goit-react-health-project/static/js/892.9f44a226.chunk.js.map",
     "607.21418258.chunk.js.map": "/goit-react-health-project/static/js/607.21418258.chunk.js.map",
     "485.b0d04da1.chunk.js.map": "/goit-react-health-project/static/js/485.b0d04da1.chunk.js.map",
@@ -101,6 +104,6 @@
   },
   "entrypoints": [
     "static/css/main.0c9f28d4.css",
-    "static/js/main.9482e782.js"
+    "static/js/main.72ff45a5.js"
   ]
 }
