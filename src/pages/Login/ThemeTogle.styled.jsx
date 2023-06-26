@@ -61,9 +61,9 @@ export const TogleSwitch = styled.div`
 export const StyledTogleLable = styled.label`
   position: absolute;
   width: 100%;
-  height: 20px;
+  height: 20.5px;
   width: 40px;
-  background-color: ${({ theme }) => theme.colors.button};
+  background-color: ${({ theme }) => theme.colors.backroundSecond};
   border-radius: 50px;
   cursor: pointer;
 `;
@@ -72,15 +72,14 @@ export const StyledInput = styled.input`
   position: absolute;
   display: none;
   &:checked ~ span {
-    background-color: ${({ theme }) => theme.colors.backroundSecond};
+    background-color: ${({ theme }) => theme.colors.button};
   }
   &:checked ~ span::before {
     transform: translateX(16px);
-    background-color: ${({ theme }) => theme.colors.borderActive};
     box-shadow: none;
-    box-shadow: inset 5px -2px 0px 0px ${({ theme }) => theme.colors.background};
+
     background-color: ${({ theme }) => theme.colors.backroundSecond};
-    transform: translateX(20px);
+    transform: translateX(18px);
   }
 `;
 
@@ -93,16 +92,14 @@ export const StyledThemeSpan = styled.span`
   &::before {
     content: '';
     position: absolute;
-    top: 1.7px;
-    left: 2px;
+    top: 2px;
+    left: 3px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
     box-shadow: inset 6px -1px 0px 0px ${({ theme }) => theme.colors.button};
-    background-color: ${({ theme }) => theme.colors.borderActive};
+    background-color: ${({ theme }) => theme.colors.backroundSecond};
 
-    background-color: ${({ theme }) => theme.colors.background};
-    box-shadow: none;
     transition: 0.3s;
   }
 `;

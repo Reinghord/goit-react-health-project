@@ -16,11 +16,8 @@ export const ThemeTogle = () => {
   const HandleThemeChange = () => {
     const newChecked = !checked;
     dispatch(changeCheck(newChecked));
-    localStorage.setItem('checked', String(newChecked));
-
     const newTheme = selectedTheme === 'dark' ? 'light' : 'dark';
     dispatch(changeTheme(newTheme));
-    localStorage.setItem('theme', newTheme);
   };
   return (
     <TogleSwitch>

@@ -54,7 +54,7 @@ column-gap: 8px; */
   }
 `;
 
-export const LogoImg = styled.img`
+export const LogoImg = styled.picture`
   /* margin-top: 20px;
   margin-bottom: 16px; */
   max-width: 46px;
